@@ -1,0 +1,165 @@
+<div class="panel panel-info">
+  	<div class="panel-heading"><%=@player.full_name%></div>
+  	<div class="panel-body">
+  		<div class="row">
+		  	<div class="col-xs-12">
+		  		<img src="<%=@player.avatar.url%>" height="150" width="150" class="pull-left">
+		  	</div>
+		  	<div class="col-xs-4">
+		  		<b>First Name </b><%=@player.first_name%>
+		  	</div>
+		  	<div class="col-xs-4">
+		  		<b>Last Name </b><%=@player.last_name%>
+		  	</div>
+
+		  	<div class="col-xs-4">
+		  		<b>Weight </b><%=@player.weight%> lbs
+		  	</div>
+		  	<div class="col-xs-4">
+		  		<b>Height </b><%=@player.feet%>'<%=@player.inch%>"
+		  	</div>
+		  	<div class="col-xs-4">
+		  		<b>Age </b><%=@player.age%>
+		  	</div>
+
+		  	<div class="col-xs-4">
+		  		<b>Date of Birth </b><%=@player.dob.strftime ("%Y-%m-%d")%>
+		  	</div>
+		  	<div class="col-xs-12 mt40">
+			  	<div class="panel panel-warning">
+			  		<div class="panel-heading">Game Statistics</div>
+					<div class="panel-body">
+						<div class="col-xs-12">
+							<table class="table table-border table-hover">
+								<tr>
+									<th>VS.</th>
+									<th>Date</th>
+									<th>Mins</th>
+									<th>Pts</th>
+									<th>Rebs</th>
+									<th>Asts</th>
+									<th>Stls</th>
+									<th>FG%</th>
+									<th>FT%</th>
+									<th>3P%</th>
+									<th>TOs</th>
+									<th>Game Analysis</th>
+								</tr>
+								<tr>
+									<td>StanTec</td>
+									<td>2016-12-22</td>
+									<td>15</td>
+									<td>3</td>
+									<td>3</td>
+									<td>1</td>
+									<td>1</td>
+									<td>14.3%</td>
+									<td>0%</td>
+									<td>50%</td>
+									<td>3</td>
+									<td><span style="color:red">Unavailable</span></td>
+								</tr>
+								<tr>
+									<td>UCSD Tritons</td>
+									<td>2016-12-12</td>
+									<td>35</td>
+									<td>13</td>
+									<td>3</td>
+									<td>4</td>
+									<td>1</td>
+									<td>14.3%</td>
+									<td>100%</td>
+									<td>50%</td>
+									<td>3</td>
+									<td><%=link_to "Download","#",:class=>"btn btn-primary"%></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		  	<div class="col-xs-12 mt40">
+			  	<div class="panel panel-primary">
+			  		<div class="panel-heading">Contracts</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-4">
+								<b>Agent Name: </b> Cliff Johnson
+							</div>
+							<div class="col-xs-4">
+								<b>Initial Contract Copy: </b> <%=link_to "JiamingChen.pdf"%>
+							</div>
+							<div class="col-xs-4">
+								<b>Start Date: </b> 2016-6-10
+							</div>
+							<div class="col-xs-4">
+								<b>End Date: </b> 2017-5-20
+							</div>
+
+							<div class="col-xs-4">
+								<b>Amendments: </b> 
+							</div>
+
+							<div class="col-xs-4">
+								<b>Attachments: </b> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		  	<div class="col-xs-12 mt40">
+			  	<div class="panel panel-success">
+			  		<div class="panel-heading">Performance Reports</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-12">
+								<table class="table table-bordered table">
+
+								<tr>
+									<th>Issued By</th>
+									<th>Issue Date</th>
+									<th>Type</th>
+									<th>Comment</th>
+								</tr>
+								<tr>
+									<td>Syan Lee</td>
+									<td>2017-03-22</td>
+									<td>Pre-Season Report</td>
+									<td>Please make sure you read through it before April 1st.</td>
+								</tr>
+
+								<tr>
+									<td>Shawn Fisher</td>
+									<td>2016-12-22</td>
+									<td>Recovering Plan</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Syan Lee</td>
+									<td>2016-12-19</td>
+									<td>Post-Season Report</td>
+									<td>Please email me if you have any questions.</td>
+								</tr>
+
+								<tr>
+									<td>Syan Lee</td>
+									<td>2016-12-10</td>
+									<td>Post-Season Report</td>
+									<td>Please email me if you have any questions.</td>
+								</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+ td,th{
+ 	text-align: center;
+ }
+</style>
